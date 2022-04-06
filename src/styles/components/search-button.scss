@@ -1,0 +1,13 @@
+.search-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .btn {
+    width: 100%;
+    height: 38px;
+    // // background: red;
+    display: flex;
+    justify-content: center;
+  }
+}

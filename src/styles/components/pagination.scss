@@ -1,0 +1,72 @@
+.pagination {
+  justify-content: center;
+  margin-top: 15px;
+
+  &--li {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $gray;
+    border-radius: 4px;
+    cursor: pointer;
+
+    a {
+      padding: 6px 15.3px;
+      font-size: 13px;
+      color: royal-blue;
+      outline: none;
+    }
+
+    &-active {
+      background: $primrose;
+      border: 1px solid $primrose;
+
+      a {
+        color: $white;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  .next,
+  .previous {
+    font-family: monospace;
+    font-weight: bold;
+    border: 1px solid $gray;
+
+    a {
+      color: $gray;
+    }
+  }
+
+  .disabled {
+    border-color: $gray;
+    
+    a {
+      color: $gray;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .table {
+    display: block;
+    overflow: auto;
+  }
+
+  .pagination {
+    &--li {
+      width: 22px;
+      height: 26px;
+
+      a {
+        font-size: 9px;
+      }
+    }
+  }
+}

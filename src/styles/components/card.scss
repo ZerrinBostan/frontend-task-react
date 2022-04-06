@@ -1,0 +1,18 @@
+.card {
+  margin-top: 5rem;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .list-group {
+      width: 100%;
+      margin: 12px;
+    }
+  }
+
+  &-img {
+    padding: 15px;
+    width: 300px;
+  }
+}
